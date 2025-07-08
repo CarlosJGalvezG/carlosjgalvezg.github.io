@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Artículos - Voces y Versos</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&amp;family=Dancing+Script:wght@500&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet"/>
+<link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+<!-- Barra de Navegación -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+<div class="container">
+<a class="navbar-brand" href="index.html">
+<i class="bi bi-journal-bookmark-fill me-2"></i>Voces y Versos
+</a>
+<button class="navbar-toggler" data-bs-target="#navbarPrincipal" data-bs-toggle="collapse" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarPrincipal">
+<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+<li class="nav-item">
+<a class="nav-link" href="index.html">Inicio</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="poemas.html">Poemas</a>
+</li>
+<li class="nav-item">
+<a class="nav-link active" href="articulos.html">Artículos</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="enlaces.html">Enlaces</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="contacto.html">Contacto</a>
+</li>
+<li class="nav-item ms-2">
+<button class="btn btn-sm btn-outline-light" id="modo-oscuro">
+<i class="bi bi-moon-stars"></i>
+</button>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+
+<!-- Cabecera decorativa -->
+<section class="seccion-principal">
+<div class="container text-center">
+<div class="row justify-content-center">
+<div class="col-md-8">
+<h1 class="titulo-elegante display-3 mb-4">Artículos sobre Poesía</h1>
+<p class="lead">Explorando el mundo de la poesía a través del análisis y la reflexión</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Contenido de artículos -->
+<section class="pagina-contenido">
+<div class="container">
+<div class="row">
+<!-- Artículo 1 -->
+<div class="col-md-6 mb-4">
+<div class="tarjeta h-100">
+<img alt="Historia de la poesía" class="img-fluid" src="https://images.unsplash.com/photo-1495446815901-a7297e633e8d?auto=format&amp;fit=crop&amp;w=500&amp;q=60"/>
+<div class="tarjeta-contenido">
+<h3>La Evolución de la Poesía Moderna</h3>
+<p>La poesía moderna ha experimentado una transformación radical en los últimos siglos...</p>
+<button class="btn btn-personalizado" data-bs-toggle="modal" data-bs-target="#modalArticulo1">
+Leer Artículo Completo
+</button>
+</div>
+</div>
+</div>
+
+<!-- Artículo 2 -->
+<div class="col-md-6 mb-4">
+<div class="tarjeta h-100">
+<img alt="Poetas jóvenes" class="img-fluid" src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&amp;fit=crop&amp;w=500&amp;q=60"/>
+<div class="tarjeta-contenido">
+<h3>Nuevas Voces en la Poesía</h3>
+<p>Descubre a los poetas emergentes que están revolucionando el panorama literario...</p>
+<button class="btn btn-personalizado" data-bs-toggle="modal" data-bs-target="#modalArticulo2">
+Leer Artículo Completo
+</button>
+</div>
+</div>
+</div>
+
+<!-- Artículo 3 -->
+<div class="col-md-6 mb-4">
+<div class="tarjeta h-100">
+<img alt="Técnicas poéticas" class="img-fluid" src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&amp;fit=crop&amp;w=500&amp;q=60"/>
+<div class="tarjeta-contenido">
+<h3>El Arte de Escribir Poesía</h3>
+<p>Técnicas y consejos para quienes desean iniciarse en el arte poético...</p>
+<button class="btn btn-personalizado" data-bs-toggle="modal" data-bs-target="#modalArticulo3">
+Leer Artículo Completo
+</button>
+</div>
+</div>
+</div>
+
+<!-- Artículo 4 -->
+<div class="col-md-6 mb-4">
+<div class="tarjeta h-100">
+<img alt="Poesía contemporánea" class="img-fluid" src="https://images.unsplash.com/photo-1471107340929-a87cd0f5b5f3?auto=format&amp;fit=crop&amp;w=500&amp;q=60"/>
+<div class="tarjeta-contenido">
+<h3>Poesía Contemporánea: Tendencias Actuales</h3>
+<p>Un análisis de las corrientes poéticas que dominan el panorama actual...</p>
+<button class="btn btn-personalizado" data-bs-toggle="modal" data-bs-target="#modalArticulo4">
+Leer Artículo Completo
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Pie de página completo -->
+<footer class="pie-pagina">
+<div class="container">
+<div class="row">
+<div class="col-md-4 mb-4 mb-md-0">
+<h4>Voces y Versos</h4>
+<p>Un espacio dedicado a la poesía y sus amantes.</p>
+<div class="redes-sociales">
+<a class="text-light" href="#"><i class="bi bi-facebook"></i></a>
+<a class="text-light" href="#"><i class="bi bi-twitter"></i></a>
+<a class="text-light" href="#"><i class="bi bi-instagram"></i></a>
+<a class="text-light" href="#"><i class="bi bi-pinterest"></i></a>
+</div>
+</div>
+<div class="col-md-4 mb-4 mb-md-0">
+<h4>Enlaces Rápidos</h4>
+<ul class="list-unstyled">
+<li><a class="text-light" href="index.html">Inicio</a></li>
+<li><a class="text-light" href="poemas.html">Poemas</a></li>
+<li><a class="text-light" href="articulos.html">Artículos</a></li>
+<li><a class="text-light" href="enlaces.html">Enlaces</a></li>
+<li><a class="text-light" href="contacto.html">Contacto</a></li>
+</ul>
+</div>
+<div class="col-md-4">
+<h4>Suscríbete a nuestro boletín</h4>
+<form>
+<div class="mb-3">
+<input class="form-control" placeholder="Tu correo electrónico" type="email"/>
+</div>
+<button class="btn btn-personalizado" type="submit">Suscribirse</button>
+</form>
+<div class="mt-3">
+<a class="text-light" href="privacidad.html">Política de Privacidad</a>
+</div>
+</div>
+</div>
+<div class="text-center mt-4 pt-3 border-top">
+<p>© 2025 Voces y Versos. Todos los derechos reservados.</p>
+</div>
+</div>
+</footer>
+
+<!-- Botón para subir -->
+<button class="btn btn-personalizado btn-lg position-fixed bottom-0 end-0 m-3" id="btn-subir">
+<i class="bi bi-arrow-up"></i>
+</button>
+
+<!-- Modal para Artículo 1 -->
+<div class="modal fade" id="modalArticulo1" tabindex="-1" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+  <div class="modal-content">
+  <div class="modal-header">
+        <h5 class="modal-title">La Evolución de la Poesía Moderna</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+  </div>
+<div class="modal-body">
+        <img src="https://images.unsplash.com/photo-1495446815901-a7297e633e8d?auto=format&amp;fit=crop&amp;w=500&amp;q=60" alt="Historia de la poesía" class="img-fluid mb-4">
+<p>La poesía moderna ha experimentado una transformación radical en los últimos siglos, evolucionando desde las formas clásicas hasta expresiones contemporáneas que desafían las convenciones tradicionales.</p>
+        
+        <h4>De lo clásico a lo contemporáneo</h4>
+<p>La transición del siglo XIX al XX marcó un punto de inflexión en la expresión poética. Mientras los románticos celebraban la emoción y la naturaleza, los modernistas buscaron nuevas formas de expresión que reflejaran la complejidad de la vida urbana y la conciencia moderna.</p>
+        
+<p>Poetas como T.S. Eliot y Ezra Pound rompieron con las estructuras métricas tradicionales, introduciendo el verso libre y técnicas como el collage y la yuxtaposición de imágenes. Esta revolución estilística abrió camino a diversas corrientes como el surrealismo, el imagismo y la poesía concreta.</p>
+        
+        <h4>Influencias globales</h4>
+<p>La segunda mitad del siglo XX presenció una creciente diversificación de voces poéticas. Poetas de América Latina, África y Asia comenzaron a ganar reconocimiento internacional, enriqueciendo el panorama poético con nuevas perspectivas culturales y tradiciones literarias.</p>
+        
+<p>El movimiento beat en Estados Unidos, encabezado por figuras como Allen Ginsberg y Jack Kerouac, fusionó poesía con contracultura, mientras que en Europa, los poetas de posguerra exploraban temas de identidad, memoria y trauma histórico.</p>
+        
+        <h4>La poesía en la era digital</h4>
+<p>El siglo XXI ha visto cómo la poesía se adapta a los nuevos medios. Plataformas digitales han democratizado la publicación poética, permitiendo que voces diversas alcancen audiencias globales. El spoken word y la poesía performática han ganado popularidad, fusionando tradición oral con innovación contemporánea.</p>
+        
+        <p>Hoy, la poesía continúa evolucionando, reflejando las complejidades de nuestro tiempo mientras mantiene su esencia como arte de la palabra condensada y cargada de significado.</p>
+</div>
+<div class="modal-footer">
+        <button type="button" class="btn btn-personalizado" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal para Artículo 2 -->
+<div class="modal fade" id="modalArticulo2" tabindex="-1" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+        <h5 class="modal-title">Nuevas Voces en la Poesía</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+<div class="modal-body">
+        <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&amp;fit=crop&amp;w=500&amp;q=60" alt="Poetas jóvenes" class="img-fluid mb-4">
+<p>El panorama poético contemporáneo está siendo transformado por una nueva generación de poetas que traen perspectivas frescas y diversas al arte de la palabra.</p>
+        
+        <h4>Diversidad de voces</h4>
+<p>La poesía actual se caracteriza por una riqueza sin precedentes en términos de diversidad. Jóvenes poetas de diferentes orígenes étnicos, culturales y socioeconómicos están encontrando plataformas para sus voces únicas. Esta pluralidad enriquece el lenguaje poético y expande los temas abordados.</p>
+        
+<p>Poetas como Ocean Vuong, con su exploración de la identidad vietnamita-estadounidense, o Fatimah Asghar, que aborda temas de género y pertenencia, están redefiniendo lo que significa ser poeta en el siglo XXI.</p>
+        
+        <h4>Nuevos formatos y plataformas</h4>
+<p>Las redes sociales han revolucionado la forma en que se consume y produce poesía. Plataformas como Instagram han dado lugar al fenómeno de los "instapoetas", escritores que alcanzan millones de lectores con versos breves pero poderosos. Rupi Kaur y Atticus son ejemplos destacados de este movimiento.</p>
+        
+<p>Estos nuevos formatos, aunque criticados por algunos puristas, han democratizado la poesía, atrayendo a audiencias que tradicionalmente no se acercaban al género.</p>
+        
+        <h4>Temas contemporáneos</h4>
+<p>La nueva generación de poetas aborda temas urgentes de nuestro tiempo: la crisis climática, la justicia social, la salud mental, y las complejidades de las relaciones en la era digital. Su poesía funciona como un espejo de las preocupaciones y aspiraciones de la sociedad actual.</p>
+        
+<p>Esta poesía, a menudo directa y accesible, no renuncia a la profundidad. Al contrario, encuentra nuevas formas de conmover y provocar reflexión en lectores de todas las edades y procedencias.</p>
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-personalizado" data-bs-dismiss="modal">Cerrar</button>
+  </div>
+</div>
+</div>
+</div>
+
+<!-- Modal para Artículo 3 -->
+<div class="modal fade" id="modalArticulo3" tabindex="-1" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+      <h5 class="modal-title">El Arte de Escribir Poesía</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+<div class="modal-body">
+        <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&amp;fit=crop&amp;w=500&amp;q=60" alt="Técnicas poéticas" class="img-fluid mb-4">
+<p>Escribir poesía es un arte que combina técnica, sensibilidad y disciplina. Aquí exploramos algunas claves para quienes desean iniciarse en esta forma de expresión literaria.</p>
+        
+        <h4>Encuentra tu voz</h4>
+<p>El primer paso para cualquier poeta es descubrir su voz única. Esto requiere lectura amplia y experimentación. Lee a los clásicos pero también a poetas contemporáneos. Prueba diferentes estilos y formas hasta encontrar aquel que resuene con tu sensibilidad.</p>
+        
+<p>La voz poética auténtica surge cuando dejas de imitar y comienzas a expresar tu visión personal del mundo. No temas mostrar vulnerabilidad; la poesía más poderosa suele nacer de experiencias genuinas y emociones auténticas.</p>
+        
+        <h4>Domina las herramientas</h4>
+<p>La poesía se construye con palabras, pero también con:</p>
+  <ul>
+     <li><strong>Imágenes:</strong> Crea cuadros vívidos con tus palabras</li>
+      <li><strong>Metáforas:</strong> Establece conexiones inesperadas</li>
+    <li><strong>Ritmo:</strong> Juega con el flujo de las palabras</li>
+      <li><strong>Sonido:</strong> Utiliza aliteraciones, asonancias y rimas</li>
+      <li><strong>Silencios:</strong> Aprende el poder de lo no dicho</li>
+  </ul>
+        
+        <h4>El proceso creativo</h4>
+<p>La creación poética generalmente sigue estas etapas:</p>
+  <ol>
+    <li><strong>Inspiración:</strong> Captura ideas y emociones en un cuaderno</li>
+    <li><strong>Borrador:</strong> Deja fluir las palabras sin autocrítica</li>
+    <li><strong>Revisión:</strong> Pule, recorta y reorganiza</li>
+    <li><strong>Descanso:</strong> Deja reposar el poema antes de revisar nuevamente</li>
+    <li><strong>Compartir:</strong> Busca retroalimentación de lectores confiables</li>
+  </ol>
+        
+  <p>Recuerda que la poesía es un viaje personal. Disfruta del proceso tanto como del resultado final.</p>
+</div>
+<div class="modal-footer">
+        <button type="button" class="btn btn-personalizado" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal para Artículo 4 -->
+<div class="modal fade" id="modalArticulo4" tabindex="-1" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">Poesía Contemporánea: Tendencias Actuales</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+<div class="modal-body">
+        <img src="https://images.unsplash.com/photo-1471107340929-a87cd0f5b5f3?auto=format&amp;fit=crop&amp;w=500&amp;q=60" alt="Poesía contemporánea" class="img-fluid mb-4">
+        <p>La poesía contemporánea es un campo vibrante y diverso que refleja las complejidades de nuestro tiempo. Analizamos las principales tendencias que están dando forma al panorama poético actual.</p>
+        
+  <h4>Poesía de la identidad</h4>
+<p>Una de las tendencias más significativas es la exploración de la identidad en todas sus dimensiones: género, raza, sexualidad, discapacidad y más. Poetas como Danez Smith y Natalie Diaz están creando obras poderosas que desafían categorizaciones simplistas y celebran la complejidad de la experiencia humana.</p>
+        
+<p>Esta poesía no solo expresa identidades personales, sino que también examina cómo estas se intersectan con estructuras sociales más amplias, creando un diálogo entre lo personal y lo político.</p>
+        
+  <h4>Ecopoesía</h4>
+<p>Ante la crisis climática, surge la ecopoesía como respuesta artística. Poetas como Jorie Graham y Forrest Gander crean obras que exploran la relación humana con el mundo natural, a menudo con un sentido de urgencia y advertencia.</p>
+        
+<p>Esta corriente no solo describe paisajes, sino que examina nuestra responsabilidad ética hacia el medio ambiente, fusionando observación científica con reflexión filosófica y expresión lírica.</p>
+        
+<h4>Poesía documental</h4>
+<p>Inspirada en técnicas del periodismo y la historia oral, la poesía documental incorpora materiales de archivo, testimonios y datos estadísticos. Claudia Rankine en "Citizen" y Solmaz Sharif en "Look" son pioneras en esta aproximación que busca iluminar realidades sociales a través de la lente poética.</p>
+        
+  <p>Este enfoque desafía las fronteras entre géneros literarios y cuestiona qué constituye "material poético", expandiendo así las posibilidades del lenguaje poético.</p>
+        
+<h4>El futuro de la poesía</h4>
+<p>La poesía contemporánea sigue evolucionando, con nuevas voces y formas emergiendo constantemente. Lo que permanece constante es el poder de la palabra poética para capturar lo inefable de la experiencia humana, ofreciendo consuelo, provocación y belleza en tiempos complejos.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-personalizado" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,177 @@
+:root {
+    --color-primario: #8B4513; /* Marrón cálido */
+    --color-secundario: #D2B48C; /* Marrón claro */
+    --color-fondo: #F5F1E6; /* Crema suave */
+    --color-texto: #3E2723; /* Marrón oscuro */
+    --color-acento: #A84300; /* Naranja quemado */
+    --color-claro: #FFF8E1; /* Crema claro */
+}
+
+[data-bs-theme="dark"] {
+    --color-primario: #C19A6B;
+    --color-secundario: #8B7355;
+    --color-fondo: #1E1E1E;
+    --color-texto: #E0D6C3;
+    --color-acento: #E65100;
+    --color-claro: #2D2D2D;
+}
+
+body {
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    font-family: 'Cormorant Garamond', serif;
+    line-height: 1.8;
+}
+
+.titulo-elegante {
+    font-family: 'Dancing Script', cursive;
+    font-weight: 700;
+    color: var(--color-acento);
+}
+
+.navbar {
+    background-color: var(--color-primario);
+    border-bottom: 3px solid var(--color-acento);
+}
+
+.navbar-brand {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+    color: var(--color-claro) !important;
+}
+
+.nav-link {
+    color: var(--color-claro) !important;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.nav-link:hover {
+    color: var(--color-acento) !important;
+    transform: translateY(-2px);
+}
+
+.seccion-principal {
+    background: linear-gradient(rgba(210, 180, 140, 0.7), rgba(210, 180, 140, 0.7)), 
+                url('https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    padding: 5rem 0;
+    margin-bottom: 3rem;
+}
+
+.tarjeta {
+    background-color: var(--color-claro);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    height: 100%;
+}
+
+.tarjeta:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.tarjeta-titulo {
+    background-color: var(--color-primario);
+    color: var(--color-claro);
+    padding: 1rem;
+    font-weight: 700;
+}
+
+.tarjeta-contenido {
+    padding: 1.5rem;
+}
+
+.tarjeta-autor {
+    color: var(--color-acento);
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+.btn-personalizado {
+    background-color: var(--color-acento);
+    color: white;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    transition: all 0.3s;
+}
+
+.btn-personalizado:hover {
+    background-color: var(--color-primario);
+    transform: scale(1.05);
+}
+
+.carrusel-imagen {
+    height: 500px;
+    object-fit: cover;
+}
+
+.pie-pagina {
+    background-color: var(--color-primario);
+    color: var(--color-claro);
+    padding: 2rem 0;
+    margin-top: 3rem;
+}
+
+.pie-pagina a {
+    color: var(--color-secundario);
+    transition: all 0.3s;
+}
+
+.pie-pagina a:hover {
+    color: var(--color-acento);
+    text-decoration: none;
+}
+
+.redes-sociales a {
+    font-size: 1.5rem;
+    margin: 0 0.5rem; /* Corregido: espacio entre valores */
+}
+
+.poema-corto { /* Corregido nombre de clase */
+    font-style: italic;
+    position: relative;
+    padding-left: 2rem; /* Valor correcto en rem */
+    margin: 1.5rem 0; /* Unidad corregida a rem */
+}
+
+.poema-corto::before { /* Corregido nombre de clase */
+    content: "\""; /* Comillas escapadas correctamente */
+    font-size: 3rem; /* Unidad corregida a rem */
+    position: absolute;
+    left: 0; /* Valor numérico con unidad */
+    top: -1rem; /* Unidad corregida a rem */
+    color: var(--color-acento); /* Nombre de variable corregido */
+}
+
+.formulario-contacto input, 
+.formulario-contacto textarea {
+    background-color: var(--color-claro); /* Variable corregida */
+    border: 1px solid var(--color-secundario); /* Grosor de borde corregido */
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.elemento-hover:hover {
+    background-color: rgba(139, 69, 19, 0.1); /* Función rgba corregida */
+    cursor: pointer;
+}
+
+.pagina-contenido {
+    min-height: 70vh; /* Unidad vh corregida */
+    padding: 2rem 0;
+}
+
+@media (max-width: 768px) {
+    .carrusel-imagen {
+        height: 300px;
+    }
+    
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+}

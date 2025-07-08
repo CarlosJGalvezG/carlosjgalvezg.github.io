@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Voces y Versos - Portal de poemas cortos clasificados por temas y autores" name="description"/>
+<meta content="poemas, poesía, versos, autores, literatura" name="keywords"/>
+<meta content="Carlos Galvez" name="Carlos Galvez"/>
+<title>Voces y Versos - Portal de Poesía</title>
+
+<!-- Favicon personalizado -->
+<link href="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;text y=%22.9em%22 font-size=%2290%22&gt;📖&lt;/text&gt;&lt;/svg&gt;" rel="icon"/>
+
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&amp;family=Dancing+Script:wght@500&amp;display=swap" rel="stylesheet"/>
+
+<!-- Bootstrap Icons -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet"/>
+
+<!-- Style-->
+<link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+<!-- Barra de Navegación -->
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+<div class="container">
+<a class="navbar-brand" href="index.html">
+<i class="bi bi-journal-bookmark-fill me-2"></i>Voces y Versos
+            </a>
+<button class="navbar-toggler" data-bs-target="#navbarPrincipal" data-bs-toggle="collapse" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarPrincipal">
+<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+<li class="nav-item">
+<a class="nav-link efecto-hover" href="index.html">Inicio</a>
+</li>
+<li class="nav-item">
+<a class="nav-link efecto-hover" href="poemas.html">Poemas</a>
+</li>
+<li class="nav-item">
+<a class="nav-link efecto-hover" href="articulos.html">Artículos</a>
+</li>
+<li class="nav-item">
+<a class="nav-link efecto-hover" href="enlaces.html">Enlaces</a>
+</li>
+<li class="nav-item">
+<a class="nav-link efecto-hover" href="contacto.html">Contacto</a>
+</li>
+<li class="nav-item ms-2">
+<button class="btn btn-sm btn-outline-light" id="modo-oscuro">
+<i class="bi bi-moon-stars" id="modo-icono"></i>
+</button>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+
+<!-- Sección Principal -->
+<section class="seccion-principal">
+<div class="container text-center">
+<div class="row justify-content-center">
+<div class="col-md-8">
+<h1 class="titulo-elegante display-3 mb-4">Voces y Versos</h1>
+<p class="lead fs-3">Donde las palabras encuentran su ritmo y las emociones su expresión</p>
+<div class="mt-5">
+<a class="btn btn-personalizado btn-lg me-2" href="poemas.html">Explorar Poemas</a>
+<button class="btn btn-outline-light btn-lg" data-bs-target="#modalBoletin" data-bs-toggle="modal">Suscribirse</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Carrusel -->
+<section class="container my-5">
+<div class="carousel slide" data-bs-ride="carousel" id="carruselPoemas">
+<div class="carousel-indicators">
+<button class="active" data-bs-slide-to="0" data-bs-target="#carruselPoemas" type="button"></button>
+<button data-bs-slide-to="1" data-bs-target="#carruselPoemas" type="button"></button>
+<button data-bs-slide-to="2" data-bs-target="#carruselPoemas" type="button"></button>
+</div>
+<div class="carousel-inner rounded shadow-lg">
+<div class="carousel-item active">
+<img alt="Libros antiguos" class="d-block w-100 carrusel-imagen" src="https://images.unsplash.com/photo-1495446815901-a7297e633e8d?auto=format&amp;fit=crop&amp;w=1350&amp;q=80"/>
+<div class="carousel-caption d-none d-md-block text-light">
+<h3>Poesía Clásica</h3>
+<p>Los versos que han trascendido el tiempo</p>
+</div>
+</div>
+<div class="carousel-item">
+<img alt="Pluma escribiendo" class="d-block w-100 carrusel-imagen" src="poema-1-e1551303998145.jpg"/>
+<div class="carousel-caption d-none d-md-block text-light">
+<h3>Creación Moderna</h3>
+<p>Nuevas voces para nuevas realidades</p>
+</div>
+</div>
+<div class="carousel-item">
+<img alt="Biblioteca" class="d-block w-100 carrusel-imagen" src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&amp;fit=crop&amp;w=1350&amp;q=80"/>
+<div class="carousel-caption d-none d-md-block text-light">
+<h3>Explora Nuestra Colección</h3>
+<p>Poemas clasificados por tema y autor</p>
+</div>
+</div>
+</div>
+<button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carruselPoemas" type="button">
+<span class="carousel-control-prev-icon"></span>
+</button>
+<button class="carousel-control-next" data-bs-slide="next" data-bs-target="#carruselPoemas" type="button">
+<span class="carousel-control-next-icon"></span>
+</button>
+</div>
+</section>
+
+<!-- Sobre Nosotros -->
+<section class="pagina-contenido">
+<div class="container">
+<div class="row align-items-center">
+<div class="col-md-6">
+<h2 class="titulo-elegante mb-4">Sobre Voces y Versos</h2>
+<p class="lead">Un refugio para los amantes de la palabra escrita, donde cada verso cuenta una historia y cada estrofa es un suspiro del alma.</p>
+<p>Fundado en 2025, Voces y Versos nació del deseo de crear un espacio donde la poesía pueda ser descubierta, compartida y celebrada. Creemos que la poesía es un lenguaje universal que trasciende fronteras y conecta corazones.</p>
+<p>Nuestra misión es preservar el legado de los grandes poetas mientras damos voz a nuevas generaciones de creadores. Cada poema en nuestra colección ha sido seleccionado con cuidado y pasión.</p>
+</div>
+<div class="col-md-6 mt-4 mt-md-0">
+<div class="position-relative">
+<img alt="Libro abierto" class="img-fluid rounded shadow-lg" src="https://images.unsplash.com/photo-1535905557558-afc4877a26fc?auto=format&amp;fit=crop&amp;w=1350&amp;q=80"/>
+<div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
+<div class="bg-white p-4 rounded shadow-sm text-center" style="max-width: 80%; opacity: 0.9;">
+<i class="bi bi-quote fs-1 text-muted"></i>
+<p class="fst-italic mb-0">"La poesía es el eco de la melodía del universo en el corazón de los humanos."</p>
+<p class="text-end mb-0 mt-2">- Rabindranath Tagore</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Poemas Destacados -->
+<section class="pagina-contenido bg-light">
+<div class="container">
+<h2 class="text-center mb-5 titulo-elegante">Poemas Destacados</h2>
+<div class="row g-4">
+<div class="col-md-4 d-flex">
+<div class="tarjeta-poema h-100 d-flex flex-column w-100">
+<div style="height: 200px; overflow: hidden; position: relative;">
+    <img alt="Amanecer" class="card-img-top w-100 h-100 object-fit-cover" 
+        src="https://images.unsplash.com/photo-1506880018603-83d5b814b5a6?auto=format&amp;fit=crop&amp;w=1350&amp;q=80"/>
+    </div>
+<div class="card-body d-flex flex-column flex-grow-1">
+<h5 class="card-title text-dark mb-3">Pinceles del alma</h5>
+<p class="card-text text-dark flex-grow-1 mb-4">Tus palabras son pinceles que piensan mi alma de...</p>
+<div class="d-flex justify-content-between align-items-center mt-auto pt-2">
+    <small class="text-muted text-dark">Ana Torres</small>
+<a class="btn btn-sm btn-personalizado" href="poemas.html">Leer completo</a>
+</div>
+</div>
+</div>
+</div>
+      
+<div class="col-md-4 d-flex">
+<div class="tarjeta-poema h-100 d-flex flex-column w-100">
+    <div style="height: 200px; overflow: hidden; position: relative;">
+    <img alt="Montañas" class="card-img-top w-100 h-100 object-fit-cover" 
+     src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&amp;fit=crop&amp;w=1350&amp;q=80"/>
+</div>
+<div class="card-body d-flex flex-column flex-grow-1">
+    <h5 class="card-title text-dark mb-3">Si el amor es un sueño</h5>
+    <p class="card-text text-dark flex-grow-1 mb-4">Si el amor es un sueño, no quiero despertar, si es un viaje, deseo perderme sin...</p>
+    <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
+    <small class="text-muted text-dark">María García</small>
+    <a class="btn btn-sm btn-personalizado" href="poemas.html">Leer completo</a>
+</div>
+</div>
+</div>
+</div>
+      
+<div class="col-md-4 d-flex">
+    <div class="tarjeta-poema h-100 d-flex flex-column w-100">
+    <div style="height: 200px; overflow: hidden; position: relative;">
+    <img alt="Mar" class="card-img-top w-100 h-100 object-fit-cover" 
+        src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&amp;fit=crop&amp;w=1350&amp;q=80"/>
+    </div>
+    <div class="card-body d-flex flex-column flex-grow-1">
+        <h5 class="card-title text-dark mb-3">Susurros del viento</h5>
+        <p class="card-text text-dark flex-grow-1 mb-4">Como el primer rayo de sol al amanecer como la flor que brota en...</p>
+        <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
+        <small class="text-muted text-dark">Carlos Rodríguez</small>
+        <a class="btn btn-sm btn-personalizado" href="poemas.html">Leer completo</a>
+</div>
+</div>
+</div>
+    </div>
+</div>
+    
+<div class="text-center mt-5">
+    <a class="btn btn-personalizado btn-lg" href="poemas.html">Ver Todos los Poemas</a>
+    </div>
+</div>
+</section>
+
+<!-- Autores Destacados -->
+<section class="pagina-contenido" id="autores-destacados">
+<div class="container">
+<h2 class="text-center mb-5 titulo-elegante">Nuestros Autores</h2>
+    <div class="row g-4">
+    <div class="col-md-3 col-sm-6 d-flex">
+    <div class="tarjeta-autor d-flex flex-column w-100">
+    <img alt="Autor 1" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&amp;fit=crop&amp;w=200&amp;q=80"/>
+<div class="d-flex flex-column flex-grow-1">
+    <h5 class="mt-3">Carlos Fernandez</h5>
+<p class="small flex-grow-1">Poeta contemporáneo con tres premios nacionales de literatura.</p>
+<a class="btn btn-sm btn-link p-0 text-body text-decoration-none mt-2 align-self-start" 
+href="poemas.html">Ver obras</a>
+    </div>
+    </div>
+</div>
+      
+<div class="col-md-3 col-sm-6 d-flex">
+<div class="tarjeta-autor d-flex flex-column w-100">
+    <img alt="Autor 2" src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&amp;fit=crop&amp;w=200&amp;q=80"/>
+    <div class="d-flex flex-column flex-grow-1">
+        <h5 class="mt-3">Javier Lopez</h5>
+        <p class="small flex-grow-1">Su poesía explora temas de identidad y pertenencia.</p>
+    <a class="btn btn-sm btn-link p-0 text-body text-decoration-none mt-2 align-self-start" 
+    href="poemas.html">Ver obras</a>
+</div>
+</div>
+</div>
+      
+<div class="col-md-3 col-sm-6 d-flex">
+    <div class="tarjeta-autor d-flex flex-column w-100">
+<img alt="Autor 3" src="https://images.unsplash.com/photo-1502823403499-6ccfcf4fb453?auto=format&amp;fit=crop&amp;w=200&amp;q=80"/>
+    <div class="d-flex flex-column flex-grow-1">
+<h5 class="mt-3">Laura Martinez</h5>
+    <p class="small flex-grow-1">Conocida por su estilo lírico y evocador de emociones.</p>
+<a class="btn btn-sm btn-link p-0 text-body text-decoration-none mt-2 align-self-start" 
+    href="poemas.html">Ver obras</a>
+    </div>
+</div>
+</div>
+      
+<div class="col-md-3 col-sm-6 d-flex">
+<div class="tarjeta-autor d-flex flex-column w-100">
+    <img alt="Autor 4" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&amp;fit=crop&amp;w=200&amp;q=80"/>
+<div class="d-flex flex-column flex-grow-1">
+    <h5 class="mt-3">Ana Torres</h5>
+<p class="small flex-grow-1">Su obra fusiona tradición con visiones modernas.</p>
+<a class="btn btn-sm btn-link p-0 text-body text-decoration-none mt-2 align-self-start" 
+    href="poemas.html">Ver obras</a>
+</div>
+</div>
+</div>
+</div>
+    
+<div class="row mt-5">
+      <div class="col-md-6">
+<h4 class="titulo-elegante mb-4">Autores reconocidos</h4>
+<ul class="lista-autores">
+ <li><i class="bi bi-person me-2"></i>Julio Cortázar</li>
+ <li><i class="bi bi-person me-2"></i>Pablo Neruda</li>
+ <li><i class="bi bi-person me-2"></i>Gabriela Mistral</li>
+ <li><i class="bi bi-person me-2"></i>Octavio Paz</li>
+ <li><i class="bi bi-person me-2"></i>Mario Benedetti</li>
+</ul>
+</div>
+<div class="col-md-6 mt-4 mt-md-0">
+    <h4 class="titulo-elegante mb-4">Top Poemas</h4>
+    <div class="top-poemas">
+<ol>
+    <li>Si el amor es un sueño</li>
+    <li>Susurros del viento</li>
+    <li>Pinceles del alma</li>
+    <li>Noche y compañia</li>
+ <li>Renacer</li>
+</ol>
+</div>
+</div>
+    </div>
+  </div>
+</section>
+
+<!-- Poema del Mes -->
+<section class="poema-del-mes">
+<div class="container">
+<h2 class="text-center mb-5 titulo-elegante">Poema del Mes</h2>
+<div class="poema-texto">
+<p>No te amo como si fueras rosa de sal, topacio<br/>
+    o flecha de claveles que propagan el fuego:<br/>
+    te amo como se aman ciertas cosas oscuras,<br/>
+    secretamente, entre la sombra y el alma.</p>
+
+<p>Te amo como la planta que no florece y lleva<br/>
+    dentro de sí, escondida, la luz de aquellas flores,<br/>
+    y gracias a tu amor vive oscuro en mi cuerpo<br/>
+    el apretado aroma que ascendió de la tierra.</p>
+
+<p>Te amo sin saber cómo, ni cuándo, ni de dónde,<br/>
+    te amo directamente sin problemas ni orgullo:<br/>
+    así te amo porque no sé amar de otra manera...</p>
+<div class="autor-firma">Pablo Neruda</div>
+</div>
+</div>
+</section>
+
+<!-- Artículos Destacados -->
+<section class="pagina-contenido bg-light">
+<div class="container">
+<h2 class="text-center mb-5 titulo-elegante">Artículos Destacados</h2>
+<div class="row g-4">
+<div class="col-md-4">
+<div class="card h-100 border-0 shadow-sm">
+<div class="card-body">
+<span class="badge bg-secondary mb-2">Análisis</span>
+<h5 class="card-title">La Evolución de la Poesía Moderna</h5>
+<p class="card-text">Exploramos cómo la poesía ha evolucionado desde los clásicos hasta las expresiones contemporáneas...</p>
+<a class="btn btn-link p-0" href="articulos.html">Leer más <i class="bi bi-arrow-right"></i></a>
+</div>
+<div class="card-footer bg-transparent border-0">
+<small class="text-muted">Publicado el 5 de Julio, 2025</small>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card h-100 border-0 shadow-sm">
+<div class="card-body">
+<span class="badge bg-success mb-2">Técnica</span>
+<h5 class="card-title">El arte de escribir poesia</h5>
+<p class="card-text">Aprende los secretos para tener voz poetica y descubrir la esencia de la poesia....</p>
+<a class="btn btn-link p-0" href="articulos.html">Leer más <i class="bi bi-arrow-right"></i></a>
+</div>
+<div class="card-footer bg-transparent border-0">
+<small class="text-muted">Publicado el 3 de Julio, 2025</small>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card h-100 border-0 shadow-sm">
+<div class="card-body">
+<span class="badge bg-info mb-2">Análisis</span>
+<h5 class="card-title">Nuevas voces en la poesia</h5>
+<p class="card-text">Mantente al tanto de la actualidad, conociendo las nuevas voces en la poesia....</p>
+<a class="btn btn-link p-0" href="articulos.html">Leer más <i class="bi bi-arrow-right"></i></a>
+</div>
+<div class="card-footer bg-transparent border-0">
+<small class="text-muted">Publicado el 28 de Junio, 2025</small>
+</div>
+</div>
+</div>
+</div>
+<div class="text-center mt-5">
+<a class="btn btn-personalizado btn-lg" href="articulos.html">Ver Todos los Artículos</a>
+</div>
+</div>
+</section>
+
+<!-- Suscripción -->
+<section class="seccion-suscripcion">
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-md-8 text-center">
+<h2 class="titulo-elegante mb-4">Recibe Poesía en tu Correo</h2>
+<p class="lead mb-4">Suscríbete a nuestro boletín y recibe cada semana un poema seleccionado, artículos exclusivos y noticias del mundo literario.</p>
+<form class="row g-3 justify-content-center">
+<div class="col-md-6">
+<input class="form-control form-control-lg form-control-suscripcion" placeholder="Tu correo electrónico" required="" type="email"/>
+</div>
+<div class="col-md-3">
+<button class="btn btn-light btn-lg w-100" type="submit">Suscribirse</button>
+</div>
+</form>
+<p class="small mt-3">Respetamos tu privacidad. Consulta nuestra <a class="text-white" href="privacidad.html" target="_blank">Política de Privacidad</a>.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Pie de Página -->
+<footer class="pie-pagina">
+<div class="container">
+<div class="row">
+ <div class="col-md-4 mb-4 mb-md-0">
+<h5><i class="bi bi-journal-bookmark-fill me-2"></i>Voces y Versos</h5>
+<p class="mt-3">Un espacio dedicado a la belleza de la palabra escrita, donde cada verso cuenta una historia y cada estrofa es un suspiro del alma.</p>
+<div class="social-icons mt-4">
+<a href="#"><i class="bi bi-facebook"></i></a>
+<a href="#"><i class="bi bi-twitter"></i></a>
+<a href="#"><i class="bi bi-instagram"></i></a>
+<a href="#"><i class="bi bi-youtube"></i></a>
+</div>
+</div>
+<div class="col-md-2 col-6 mb-4 mb-md-0">
+<h5>Explorar</h5>
+<ul class="list-unstyled mt-3">
+ <li class="mb-2"><a href="index.html">Inicio</a></li>
+<li class="mb-2"><a href="poemas.html">Poemas</a></li>
+<li class="mb-2"><a href="articulos.html">Artículos</a></li>
+<li class="mb-2"><a href="enlaces.html">Enlaces</a></li>
+<li><a href="contacto.html">Contacto</a></li>
+</ul>
+</div>
+<div class="col-md-3 col-6 mb-4 mb-md-0">
+<h5>Recursos</h5>
+<ul class="list-unstyled mt-3">
+<li class="mb-2"><a href="#autores-destacados">Autores</a></li>
+<li class="mb-2"><a href="poemas.html">Géneros Poéticos</a></li>
+</ul>
+</div>
+<div class="col-md-3">
+<h5>Legal</h5>
+<ul class="list-unstyled mt-3">
+<li class="mb-2"><a href="privacidad.html">Política de Privacidad</a></li>
+</ul>
+</div>
+</div>
+<div class="copyright">
+<p class="mb-0">© 2025 Voces y Versos. Todos los derechos reservados.</p>
+</div>
+</div>
+</footer>
+
+<!-- Modal Suscripción -->
+<div class="modal fade" id="modalBoletin" tabindex="-1">
+<div class="modal-dialog">
+<div class="modal-content">
+    
+<div class="modal-header">
+<h5 class="modal-title">Suscríbete a nuestro boletín</h5>
+ <button class="btn-close" data-bs-dismiss="modal" type="button"></button>
+</div>
+
+<div class="modal-body">
+<p>Recibe contenido exclusivo directamente en tu correo.</p>
+<form id="formularioSuscripcion">
+<div class="mb-3">
+    <label class="form-label">Nombre</label>
+    <input class="form-control" required type="text" name="nombre" />
+</div>
+<div class="mb-3">
+    <label class="form-label">Correo Electrónico</label>
+  <input class="form-control" required type="email" name="correo" />
+</div>
+<div class="form-check mb-3">
+<input class="form-check-input" required type="checkbox" name="privacidad" />
+    <label class="form-check-label">Acepto la <a href="privacidad.html">Política de Privacidad</a></label>
+</div>
+    </form>
+</div>
+
+<div class="modal-footer">
+    <button class="btn btn-secondary" data-bs-dismiss="modal" type="button">Cancelar</button>
+    <button class="btn btn-personalizado" type="submit" form="formularioSuscripcion" onclick="alert('Enviado')">Suscribirse</button>
+</div>
+
+</div>
+</div>
+</div>
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- JavaScript Personalizado -->
+<script src="script.js"></script>
+</body>
+</html>
